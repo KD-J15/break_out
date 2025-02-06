@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ブロック崩しゲーム</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="info">
+            <span>スコア: <span id="score">0</span></span>
+            <span>タイム: <span id="timer">60</span>秒</span>
+        </div>
+        <canvas id="gameCanvas" width="500" height="500"></canvas>
+    </div>
+    <audio id="bgm" src="bgm.mp3" loop></audio> <!-- BGM -->
+    <script src="game.js"></script>
+</body>
+</html>
