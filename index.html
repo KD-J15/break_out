@@ -8,13 +8,22 @@
 </head>
 <body>
     <div id="game-container">
+        <div id="start-screen">
+            <h1>ブロック崩し</h1>
+            <button id="start-button">スタート</button>
+        </div>
+        <div id="game-over-screen" style="display: none;">
+            <h1>Game Over</h1>
+            <p>スコア: <span id="final-score">0</span></p>
+            <button id="restart-button">リスタート</button>
+        </div>
         <div id="info">
             <span>スコア: <span id="score">0</span></span>
             <span>タイム: <span id="timer">60</span>秒</span>
         </div>
         <canvas id="gameCanvas" width="500" height="500"></canvas>
     </div>
-    <audio id="bgm" src="bgm.mp3" loop></audio> <!-- BGM -->
+    <audio id="bgm" src="bgm.mp3" loop></audio>
     <script src="game.js"></script>
 </body>
 </html>

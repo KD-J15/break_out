@@ -20,9 +20,64 @@ body {
     width: 500px;
     font-size: 18px;
     margin-bottom: 5px;
+    display: none; /* 初期状態では非表示 */
 }
 
 canvas {
     background-color: black;
     display: block;
+
+}
+
+/* スタート画面 */
+#start-screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#start-screen h1 {
+    margin-bottom: 20px;
+}
+
+#start-button, #restart-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* ゲームオーバー画面 */
+#game-over-screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#game-over-screen h1 {
+     margin-bottom: 10px;
+}
+
+#final-score{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+/* ゲーム画面表示用 */
+.game-active #info,
+.game-active #gameCanvas {
+    display: block;
+}
+.game-active #start-screen {
+    display: none;
 }
