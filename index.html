@@ -22,9 +22,12 @@
             <span>タイム: <span id="timer">60</span>秒</span>
         </div>
         <canvas id="gameCanvas" width="500" height="500"></canvas>
+
+        <!-- loop属性を付与してBGMをループ再生する -->
+        <audio id="bgm" src="bgm.mp3" loop></audio>
     </div>
-    <audio id="bgm" src="bgm.mp3" loop></audio>
-    <script src="game.js"></script>
+
+    <script src="game.js" defer></script>
     <p>開発チーム:カニマン</p>
     <a href="https://github.com/KD-J15/break_out">このゲームのGitHubリポジトリ</a>
     <p>このゲームのBGMはとあるゲームから着想を受け、使用しています。</p>
